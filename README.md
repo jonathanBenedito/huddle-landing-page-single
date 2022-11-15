@@ -2,7 +2,7 @@
   Huddle Landing Page
 </h1>
 <p align="center">
-  <a href="https://jonathanbenedito.github.io/workshop-ntf-card" target="_blank">Huddle Landing Page</a> é um website solução  para a Quest HTML + CSS Avançado do curso DevQuest.
+  <a href="https://jonathanbenedito.github.io/huddle-landing-page-single" target="_blank">Huddle Landing Page</a> é um website solução  para a Quest HTML + CSS Avançado do curso DevQuest.
 </p>
 
 ![demo](design/desktop-design.png)
