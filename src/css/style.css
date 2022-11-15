@@ -9,8 +9,16 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-body h2, button {
+body h2, .register-button {
     font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 1000px) {
+    body {
+        background: url("../images/bg-mobile.svg") no-repeat;
+        background-size: contain;
+        background-color: var(--primary-violet);
+    }
 }
 
 /* MAIN */
@@ -41,9 +49,9 @@ body h2, button {
 
 /* MAIN */
 
-/* HEADER */
+/* CONTAINER */
 
-.header {
+.container {
     grid-area: header;
     display: grid;
     grid-template-areas:    "logo logo"
@@ -52,42 +60,44 @@ body h2, button {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.logo {
+/* - LOGO */
+
+.container .logo {
     grid-area: logo;
     display: flex;
     margin-bottom: 8rem;
 }
 
-.logo img {
+.container .logo img {
     max-width: 215px;
 }
 
 @media (max-width: 1000px) {
-    .header {
+    .container {
         grid-template-columns: 1fr;
         padding: 4rem 4rem;
     }
 
-    .logo {
+    .container .logo {
         margin-bottom: 2rem;
     }
 
-    .logo img {
+    .container .logo img {
         max-width: 130px;
     }
 }
 
-/* HEADER */
+/* - LOGO */
 
-/* INTRODUCTION */
+/* - INTRODUCTION */
 
-.introduction {
+.container .introduction {
     display: grid;
     grid-area: introduction;
     grid-template-columns: 1.2fr 600px;
 }
 
-.introduction .ilustration {
+.container .introduction .illustration {
     width: 100%;
     height: 100%;
     display: flex;
@@ -95,32 +105,27 @@ body h2, button {
     justify-content: center;
 }
 
-.introduction .image.left {
-    background: url("../images/illustration-mockups.svg") center center no-repeat;
-    background-size: contain;
-}
-
-.introduction .info{
+.container .introduction .info{
     color: var(--font-color);
     padding: 4.5rem 2rem 0 5.5rem;
 }
 
-.introduction .info h2 {
+.container .introduction .info h2 {
     font-size: 4.0rem;
     font-weight: 600;
     margin-bottom: 2rem;
 }
 
-.introduction .info p {
+.container .introduction .info p {
     font-weight: 400;
-    margin-bottom: 2.5rem;
+    margin-bottom: 4.5rem;
     line-height: 2.6rem;
 }
 
-.introduction .register-button {
+.container .introduction .register-button {
     padding: 1.5rem 6.5rem;
     border-radius: 40px;
-    border: none;
+    background-color: var(--font-color);
     color: var(--primary-violet);
     font-weight: 400;
     font-size: 1.8rem;
@@ -128,14 +133,14 @@ body h2, button {
     transition: 0.3s ease-in-out;
 }
 
-.introduction .register-button:hover {
+.container .introduction .register-button:hover {
     cursor: pointer;
     background-color: var(--primary-soft);
     color: var(--font-color);
 }
 
 @media (max-width: 1000px) {
-    .introduction {
+    .container .introduction {
         grid-template-columns: 1fr;
         grid-template-rows: 0.5fr 1fr;
         padding: 0;
@@ -143,25 +148,29 @@ body h2, button {
         gap: 5rem;
     }
 
-    .introduction .info {
+    .container .introduction .info {
         padding: 0;
     }
 
-    .introduction .info h2 {
+    .container .introduction .info h2 {
         font-size: 2.4rem;
     }
 
-    .introduction .register-button {
+    .container .introduction .info p {
+        margin-bottom: 3.5rem;
+    }
+
+    .container .introduction .register-button {
         padding: 1rem 7.5rem;
         font-size: 1.4rem;
     }
 }
 
-/* INTRODUCTION */
+/* - INTRODUCTION */
 
-/* FOOTER */
+/* - FOOTER */
 
-.footer {
+.container .footer {
     grid-area: footer;
     display: flex;
     justify-content: flex-end;
@@ -169,12 +178,12 @@ body h2, button {
     padding: 2rem 2rem;
 }
 
-.footer .social {
+.container .footer .social {
     display: flex;
     gap: 1.8rem;
 }
 
-.footer .social .social-button{
+.container .footer .social .social-button{
     color: var(--font-color);
     border: 1.8px solid var(--border-color);
     border-radius: 50%;
@@ -187,19 +196,20 @@ body h2, button {
     transition: 0.3s ease-in-out;
 }
 
-.footer .social .social-button:hover {
+.container .footer .social .social-button:hover {
     border-color: var(--primary-soft);
     color: var(--primary-soft);
 }
 
 @media (max-width: 1000px) {
-    .footer {
+    .container .footer {
         padding: 0;
         align-self: end;
         justify-content: center;
     }
 }
 
-/* FOOTER */
+/* - FOOTER */
 
+/* CONTAINER */
 
