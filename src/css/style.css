@@ -26,7 +26,7 @@ body h2, .register-button {
 .main {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     padding: 5.5rem;
     margin-left: 1.5rem;
 }
