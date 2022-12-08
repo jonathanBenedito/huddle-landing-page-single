@@ -5,7 +5,7 @@
   Huddle Landing Page
 </h1>
 <p align="center">
-  <a href="https://jonathanbenedito.github.io/huddle-landing-page-single/" target="_blank">Huddle Landing Page</a> é uma landing page de comunidade. Página simples sem scroll que ocupa a tela inteira do navegador. Feito para o desafio do curso DevQuest.
+  <a href="https://jonathanbenedito.github.io/huddle-landing-page-single/" target="_blank">Huddle Landing Page</a> é uma landing page de página simples sem scroll que ocupa a tela inteira do navegador. Feito para o desafio do curso DevQuest.
 </p>
 
 ![demo](design/desktop-layout.png)
